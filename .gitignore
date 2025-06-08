@@ -1,0 +1,5 @@
+vmtbh_mac396/
+__pycache__/
+*.pyc
+.env
+.DS_Store

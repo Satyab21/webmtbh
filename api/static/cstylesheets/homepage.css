@@ -1,0 +1,489 @@
+
+/* *{
+    border: 0.1px dashed red;
+    margin: 0.5px;
+} */
+
+#particles-js {
+    height: 100vh;
+    width: 100vw;
+    /* z-index: 10000; */
+}
+
+.container-values{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.4rem;
+    margin-bottom: 5rem;
+    margin: 4.4rem 1vw 0 1vw;  /*top[header], right, left*/
+    /* z-index: 10000; */
+}
+.value{
+    margin: 1vw 0 5vw 0;
+}
+.value-title-heading{
+    margin: 0;
+    text-align: center;
+    font-size: 6vw;
+}
+.value-title-subheading{
+    margin: 0;
+    text-align: center;
+    font-size: 5vw;
+} 
+
+
+/* intro */
+.intro{
+    text-align: center;
+    min-height: calc(100vh - 8rem);
+    /* height: 100vh; */
+    /* display: flexbox ; */
+    /* border: 1px solid red; */
+}
+.intro #text{
+    z-index: 2;
+}
+.intro .value-title-heading.large{
+    flex-shrink: 1;
+    white-space: nowrap;
+    /* z-index: 1000; */
+}
+.intro .value-title-heading.small{
+    display: none;
+}
+.intro .underline{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.79);
+    transition: border-bottom 1s ease;
+}
+.intro .value-title-subheading{
+    transition: opacity 1.5s;
+    opacity: 0.3;
+    font-size: 4vw;
+}
+.value-poc{
+    font-size: 1.5vw;
+    margin: 0;
+    z-index: 2;
+}
+.value-subtitle{
+    font-size: 2.55vw;
+    font-weight: lighter;
+    margin: 0;
+    word-spacing: 0.31vw;
+}
+#iDisclaimer{
+    /* display: flex; */
+    /* visibility: hidden */
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.digital-portfolio{
+    font-size: 6vw;
+    margin: 0 0 0vh 0;
+    z-index: 1000;
+}
+#dpS{
+    display: none;
+}
+
+.value-title-subheading-ps{
+    display: none;
+}
+
+#iUse{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1vw;
+    /* min-height: calc(100vh - 60vh); */
+    /* bottom: 0%; */
+    backdrop-filter: blur(1.5px);
+}
+
+
+#iLeft, #iRight {
+    border: inherit;
+    /* justify-content: center; */
+    align-items: center;
+}
+#iLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+}
+#iLeft a{
+    text-decoration: none;
+}
+#iLeft-text{
+    font-size: 2.1vw;
+}
+
+#iLeft #ihex{
+    width: 25%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#iRight{
+    position: relative;
+}
+#iList{
+    margin: 0vh 0vh;
+    position: absolute;
+    /* border: 2px dashed red; */
+    padding: 0;
+    height: 100%;
+    top: 0px;
+}
+.iItem{
+    /* margin: auto 0; */
+    display: block;
+    margin: 5vh 0vh;
+    list-style: none;
+    font-size: 1.33vw;
+    font-weight: 420;
+}
+.iLink{
+    backdrop-filter: blur(20rem);
+    text-decoration: none;
+    color: inherit;
+    z-index: 2;
+}
+.iLink::after{
+    content: ' [work in progress]';
+    white-space: pre;
+    font-size: 0.69vw;
+}
+
+
+/* progress-bar */
+.w3-container{
+    padding: 0.01em 16px;
+    height: 1.8vw;
+    font-size: 1.2vw;
+
+}
+.progress-bar{
+    /* padding: 0 37vw 0 37vw; */
+    margin-bottom: 0vh;
+    width: 50%;
+}
+.w3-container:before,.w3-container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.w3-light-grey{
+    color: #000!important;
+    background-color: #f1f1f1!important;
+    /* width: 100%; */
+}
+.w3-round-xlarge {
+    border-radius: 16px;
+}
+
+.w3-blue{
+    color: #fff!important;
+    background-color: #2196F3!important;
+}
+/* .progress-bar{
+    display: none;
+} */
+
+
+/* About Me *****************************/ 
+.aboutme{
+    background-color: none;
+    /* background-color: #fff; */
+}
+.aboutme .value-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutme-title-text{
+    display: inline;
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+
+
+/* Venn */
+.venn{
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row; */
+    margin-top: 1em;
+    justify-items: center;
+}
+
+.hex-interact{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+    margin-bottom: 2vh;
+    display: none;
+}
+
+.venn object{
+    margin: 1em;
+    width: 50%;
+}
+
+
+
+/* Mission Grid ********************/
+.mission .underline{
+    border-bottom: 2px solid black;
+}
+.mission-grid{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    list-style: square;
+}
+.grid-subitem{
+    height: max-content;
+    margin-top: 1.5rem;
+}
+.grid-subitem-listitem{
+    list-style: square;
+}
+
+
+.grid-item-title{
+    font-weight: 420;
+    text-align: center;
+    margin: 0;
+    font-size: 2.6rem;
+}
+
+.grid-subitem-title{
+    text-align: left;
+    margin: 0;
+    font-size: 2rem;
+}
+
+
+
+.grid-subitem-title button{
+    background-color: white;
+    border: 1px solid black;
+    transition: 0.2s ease-in;
+}
+.grid-subitem-title:hover button{
+    background-color: #0F0;
+    border: 0.5px solid black;
+    transition: 0.5s ease-in;
+}
+.grid-subitem-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+
+.grid-subitem-listitem-title{
+    margin: 0;
+    font-size: 1.6rem;
+    /* background-color: gray; */
+}
+.grid-subitem-listitem-text{
+    margin: 0;
+    font-size: 1.4rem;
+    /* background-color: gray; */
+}
+.try{
+    background-color: wheat;
+    font-size: 1.2em;
+}
+.try::after{
+    content: " [Revealing on 15th Aug]";
+}
+
+.journey{
+    position: relative;
+    display: flex;
+}
+
+
+
+/*##########################################################*/ 
+/* Mobile Formatting */
+/*##########################################################*/ 
+@media screen and (max-width : 767px){
+
+    .container-values{
+        margin-top: 5.8rem;
+        margin-bottom: 3rem;
+        /* float: right; */
+    }    
+    .value{
+        margin: 0;  
+        background-color: none;
+    }     
+    .value-title-heading{
+        font-size: 6vw;
+        margin: 0;
+    }
+    .value-title-subheading{
+        font-size: 4vw;
+    }
+
+
+    /* intro **************/
+    .intro, .passion, .value-venn{
+        position: relative;
+        padding: 0;
+        margin: 0 10 0 0;
+    }
+    .digital-portfolio{
+        margin: calc((0.5vw*3.2) + 1.5vw) 0;
+        background-color: none;
+    }
+    #dpL{
+        display: none;
+    }
+    #dpS{
+        display: block;
+        font-size: 6vw;
+        z-index: 2;
+    }
+
+    .intro .underline{
+        border-bottom: 2px solid #fff;
+        transition: border-bottom 1s ease;
+    }
+    .intro .value-title-heading.large{
+        display: none;
+    }
+    .intro .value-title-heading.small{
+        display: block;
+        margin-top: 0.8vh;
+        font-size: 6vw;
+        font-weight: 420;
+        /* margin: 4vh 0 1vh 0; */
+        margin: calc((0.5vw*3.2) + 1.5vw) 0;
+    }
+ 
+    .intro .value-title-subheading{
+        font-size: 3.4vw;
+        opacity: 0.5;
+        /* margin: 4vh 0 4vh 0; */
+        margin: 3vh 0;
+    }
+    .intro .value-title-subheading-ps{
+        font-size: 5vw;
+        opacity: 0.5;
+        text-align: left;
+        margin: 0;
+    }
+    .intro .value-title-subheading-ps::before{
+        content: "A ";
+        opacity: 0;
+    }
+    .value-subtitle{
+        font-size: 2.55vw;
+        word-spacing: 0.31vw;
+        margin: 3vw 0;
+    }
+    .value-poc{
+        font-size: 2vw;
+    }
+    .progress-bar{
+        /* padding: 0 27vw 0 27vw; */
+        margin: 2vw 0;
+    }
+    #iUse{
+        margin: 1vh 0;
+    }
+       
+
+    /* about-me ******/
+    .aboutme .value-title-heading{
+        margin: 0;
+    } 
+    .aboutme-title-text{
+        font-size: 4vw;
+    }
+    .aboutme .value-title-subheading{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    } 
+
+
+    .venn object{
+        margin: 1em;
+        width: 100%;
+    }
+    #hex{
+        margin: 0;
+    }
+
+
+    /* Mission Grid (time effort money) *******/
+    .mission .value-title-heading{
+        font-size: 6vw;
+        margin-top: 3vh;
+    }
+    .mission .value-title-subheading{
+        margin-top: 2vw;
+        font-size: 4vw;
+    }
+    .mission .verify{
+        font-size: 4vw;
+        font-style: italic;
+    }
+    .mission-grid{
+        grid-auto-flow: row;
+        gap: 1rem;
+    }
+    .grid-subitem{
+        margin-top: 1vh;
+    }
+    .grid-subitem-list{
+        margin: 0;
+        padding: 0;
+    }
+
+    .grid-item-title{
+        font-size: 8vw;
+        margin-top: 1rem;
+    }
+    .grid-subitem-title{
+        font-size: 6vw;
+        margin-top: 1rem;
+        font-weight: 320;
+    }
+    .grid-subitem-listitem-title{
+        margin: 0;
+        font-size: 5vw;
+        font-weight: 220;
+    }
+    .grid-subitem-listitem-text{
+        margin: 0;
+        font-size: 4vw;
+    }
+
+    .passion .value-title-subheading {
+        font-size: 4vw;
+    }
+    .passion{
+        margin-top: 3vh;
+    }
+    .passion{
+        margin-top: 3vh;
+    }
+}
+
+
+.mission-grid, .aboutme, #quote1, .passion-grid, .venn-tagcloud{
+    display: none;
+}
+

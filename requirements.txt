@@ -1,0 +1,12 @@
+fastapi
+numpy
+pandas
+requests
+urllib3
+python-multipart
+deta
+jinja-partials
+fastapi-login
+uvicorn
+pydantic
+flask

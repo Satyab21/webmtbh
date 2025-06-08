@@ -1,0 +1,65 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em;
+  margin-top: 6rem;
+  height: 80vh;
+}
+
+.container.login{
+  display: flex;
+  border: 3px dashed blue;
+  border-radius: 5px;
+  max-height: 75vh;
+}
+.login{
+  margin: 0.5em;
+  border: 1px solid red;
+}
+.login.details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user *{
+  display: block;
+  margin: 1vh 0 1vh 0;
+}
+.user.input input{
+  font-size: 2vw;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.user.options{
+  font-size: 2vw;
+  width: 100%;
+}
+.user.options button{
+  width: 100%;
+  height: 2vw;
+  font-size: 1.5vw;
+  font-weight: lighter;
+}
+
+
+
+
+
+.imgcontainer img{
+  display: none;
+}
+.user.remember-me{
+  display: none;
+  font-size: 1.5vw;
+}
+.user.cancel, .user.reset{
+  display: none;
+}
+.support{
+  display: none;
+}
+

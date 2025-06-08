@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- General -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/api/static/assets/images/logo/data-science.svg">
+    <title>MTBH</title>
+    <link rel="stylesheet" href="/api/static/cstylesheets/include/theme.css">
+    
+    <!-- Nav-Header -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>$(function(){$('#nav_header').load('/api/templates/include/nav_header.html')})</script>
+    
+    <!-- Page Specific CSS -->
+    <link href="{{ url_for('static', path='/cstylesheets/homepage.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="/api/static/cstylesheets/homepage.css">
+
+    <!-- Timeline CSS -->
+    <link href="{{ url_for('static', path='/cstylesheets/journey.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="/api/static/cstylesheets/journey.css">
+
+    <!-- <link rel="stylesheet" href="/api/static/cstylesheets/tagcloud.css"> -->
+</head>
+
+
+<body>
+
+
+
+<div id="nav_header">
+    {{render_partial('include/nav_header.html')}}
+</div>
+
+<div id="particles-js"></div>
+
+
+<!-- Values -->
+<div class="container-values">
+
+<section class="value intro">
+    <div class="value-container">
+
+        <div class="value-title">
+            <p class="digital-portfolio large" id="dpL">
+                Welcome to my Digital Portfolio
+            </p>
+            <p class="digital-portfolio small" id="dpS">
+                Welcome to my <br> Digital Portfolio
+            </p>
+            <div id="iDisclaimer">
+                <p class="value-desc value-poc">
+                    *This website is under construction.
+                </p>
+                <div class="w3-container progress-bar">
+                    <div class="w3-light-grey w3-round-xlarge">
+                        <div class="w3-container w3-blue w3-round-xlarge" style="margin-right:calc(100% - 31%)">31%</div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="value-title-heading small"><span class="underline">Hi, I am <br> Satya Bhambhani</span> </h2>
+            <h2 class="value-title-heading large"> <span class="underline">Hee, I am Satya Bhambhani</span> </h2>
+
+            <h3 class="value-title-subheading">A Data Doctor for Business Operations</h3>
+            <h3 class="value-subtitle">I make work-flows seamlessly convenient. And a little less painful.</h3>
+
+            <div id="i-ps">
+                <h3 class="value-title-subheading-ps">Data Scientist</h3>
+                <h3 class="value-title-subheading-ps">Economist</h3>
+                <h3 class="value-title-subheading-ps">Financial Professional</h3>
+                <h3 class="value-title-subheading-ps">Statistician</h3>
+                <h3 class="value-title-subheading-ps">Web Developer</h3>
+                <h3 class="value-title-subheading-ps">Econometrician</h3>
+                <h3 class="value-title-subheading-ps">Researcher</h3>
+                <h3 class="value-title-subheading-ps">Business Analyst</h3>
+                <h3 class="value-title-subheading-ps">Co-Author</h3>
+            </div>
+        </div>
+
+        <div class="value-content fill-height" id="iUse">
+
+            <div id="iLeft">
+                <a href="/login">
+                <div>
+                    <p id="iLeft-text">Your Portal to Automation</p>
+                </div>
+                </a>
+                
+                <object id="ihex" data="/api/static/assets/images/homepage/hex_center.svg"></object>
+                
+            
+            </div>
+
+            <div id="iRight">
+                
+                <ul id="iList">
+                    <li class="iItem" id="iIndex">
+                        <a href="#" class="iLink">Index</a>
+                    </li>
+                    <li class="iItem" id="iGuide">
+                        <a href="#" class="iLink">Guide</a>
+                    </li>
+                    <li class="iItem" id="iHelp">
+                        <a href="#" class="iLink">Help</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>  
+
+    </div> 
+    
+</section>
+
+<section class="value passion">
+    <div class="value-container">
+
+        <div class="value-title">
+            <h2 class="value-title-heading">My Passion</h2>
+            <h3 class="value-title-subheading">Automate Everything. <br> One Step at a Time.</h3>
+            <p class="value-title-subheading">
+                To Automate Data-Flow with my tools.
+            </p>
+            <h3 class="value-title-subheading">Sharper Tools. Cutting-Edge. Surgical Precision.</h3>
+        </div>  
+
+        
+        <div class="value-content passion-grid">
+
+        <div class="grid-item passion-item">
+            <p class="grid-item-title passion-item-title"> <span class="underline">Productivity</span> </p>
+
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">No point of repeating work</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">From Repetition to Automation</p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Divide & Conquer</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">Deliver with Quality</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Predict with Accuracy</p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Errorless Delivery</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item passion-item">
+            <p class="grid-item-title passion-item-title"> <span class="underline">Convenience</span> </p>
+            
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">Data Whenever you want</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Data on Schedule</p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Easy Data Access</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">Data However you want</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Your choice of data format</p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Visualize your way</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item passion-item">
+            <p class="grid-item-title passion-item-title"> <span class="underline">Simplicity</span> </p>
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">Confidence without Stress</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Clear Goals</p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Defined Plans</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">Execute Reliably</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Easy Process</p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Simple Steps</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>  
+    </div>  
+</section>
+
+<section class="value mission">
+    <div class="value-container">
+        
+        <div class="value-title">
+            <h2 class="value-title-heading">The Mission</h2>
+           
+            <h3 class="value-title-subheading">Automation saves you 
+                <span class="underline">Time</span>,
+                <span class="underline">Effort</span> &
+                <span class="underline">Money</span>.
+            </h3>
+            <p class="value-title-subheading verify">
+                Trust, but Verify. <br>
+                Try it out yourself.
+            </p>
+        </div> 
+
+        <div class="value-content mission-grid">
+
+            <div class="grid-item mission-item">
+                <p class="grid-item-title mission-item-title"> <span class="underline">Time</span> </p>
+
+                <div class="grid-subitem">
+                    <!-- <button type="button" class="collapse"></button> -->
+                    <p class="grid-subitem-title"><button type="button" class="collapse">+</button>
+                        Complete Tasks Quickly</p>
+                    <div class="grid-subitem-body">
+                        <ul class="grid-subitem-list">
+                            <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Pre-Processed Data</p> 
+                                <p class="grid-subitem-listitem-text">Convert Balance-Sheets into common-size statements within seconds.</p> 
+                                <button class="try">Try it out</button>
+                            </li>
+                            <!-- <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">The Shortest Path</p>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid-subitem">
+                    <p class="grid-subitem-title"><button type="button" class="collapse">+</button>
+                        No point of repeating work</p>
+                    <div class="grid-subitem-body">
+                        <ul class="grid-subitem-list">
+                            <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">From Repetition to Automation</p> 
+                                <p class="grid-subitem-listitem-text">Calculate common-size statements with accuracy without every opening the Excel.</p> 
+                                <button class="try">Try it out</button>
+                            </li>
+                            <!-- <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Divide & Conquer</p>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-subitem">
+                    <p class="grid-subitem-title"><button type="button" class="collapse">+</button>
+                        Deliver with Quality</p>
+                    <div class="grid-subitem-body">
+                        <ul class="grid-subitem-list">
+                            <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Predict with Accuracy</p>
+                                <p class="grid-subitem-listitem-text">Predict backruptcy using any firm's common-size statements.</p> 
+                                <button class="try">Try it out</button>
+                            </li>
+                            <!-- <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Errorless Delivery</p>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-subitem">
+                    <p class="grid-subitem-title"><button type="button" class="collapse">+</button>
+                        Deliver with Speed</p>
+                    <div class="grid-subitem-body">
+                        <ul class="grid-subitem-list">
+                            <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Data Delivery</p>
+                                <p class="grid-subitem-listitem-text">Automate data delivery to you by mail, file or a link.</p> 
+                                <button class="try">Try it out</button>
+                            </li>
+                            <!-- <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Quick Turnover Time</p>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item mission-item">
+                <p class="grid-item-title mission-item-title"> <span class="underline">Effort</span> </p>
+                <div class="grid-subitem">
+                    <p class="grid-subitem-title"><button type="button" class="collapse">+</button>
+                        Eliminate Pain Points</p>
+                    <div class="grid-subitem-body">
+                        <ul class="grid-subitem-list">
+                            <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Never struggle to find data</p>
+                                <p class="grid-subitem-listitem-text">Experience the power of SQL queries with clicks and sliders.</p> 
+                                <button class="try">Try it out</button>
+                            </li>
+                            <!-- <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Concise Documentation</p>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-subitem">
+                    <p class="grid-subitem-title"><button type="button" class="collapse">+</button>
+                        Damage Control</p>
+                    <div class="grid-subitem-body">
+                        <ul class="grid-subitem-list">
+                            <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Real-time Tracking</p>
+                                <p class="grid-subitem-listitem-text">With Websocket-Connectors, Live dashboards can save lives.</p>
+                                <button class="try">Try it out</button>
+                            </li>
+                            <!-- <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Your Data Cockpit</p>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid-subitem">
+                    <p class="grid-subitem-title"><button type="button" class="collapse">+</button>
+                        Data Whenever you want</p>
+                    <div class="grid-subitem-body">
+                        <ul class="grid-subitem-list">
+                            <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Data on Schedule</p>
+                                <p class="grid-subitem-listitem-text">Schedule your daily data delivery, ex. 11am with bach scripting.</p>
+                                <button class="try">Try it out</button>
+                            </li>
+                            <!-- <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Easy Data Access</p>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-subitem">
+                    <p class="grid-subitem-title"><button type="button" class="collapse">+</button>
+                        Data However you want</p>
+                    <div class="grid-subitem-body">
+                        <ul class="grid-subitem-list">
+                            <!-- <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Your choice of data format</p>
+                            </li> -->
+                            <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Visualize your way</p>
+                                <p class="grid-subitem-listitem-text">Choose animated R-graphics or interact with PowerBI.</p>
+                                <button class="try">Try it out</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grid-item mission-item">
+                <p class="grid-item-title mission-item-title"> <span class="underline">Money</span> </p>
+
+                <div class="grid-subitem">
+                    <p class="grid-subitem-title"><button type="button" class="collapse">+</button>
+                        Multiply your Profits</p>
+                    <div class="grid-subitem-body">
+                        <ul class="grid-subitem-list">
+                            <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Identify Factors</p>
+                                <p class="grid-subitem-listitem-text">Lets find whats slowing the profits with regressions.</p>
+                                <button class="try">Try it out</button>
+                            </li>
+                            <!-- <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Audience Targeting</p>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid-subitem">
+                    <p class="grid-subitem-title"><button type="button" class="collapse">+</button>
+                        Leverage & Lead</p>
+                    <div class="grid-subitem-body">
+                        <ul class="grid-subitem-list">
+                            <!-- <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Industry Leading Solutions</p>
+                            </li> -->
+                            <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Above the Curve</p>
+                                <p class="grid-subitem-listitem-text">Check where you stand against your competitors using market analysis.</p>
+                                <button class="try">Try it out</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid-subitem">
+                    <p class="grid-subitem-title"><button type="button" class="collapse">+</button>
+                        Confidence without Stress</p>
+                    <div class="grid-subitem-body">
+                        <ul class="grid-subitem-list">
+                            <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Analysis Significance</p>
+                                <p class="grid-subitem-listitem-text">Gain confidence by narrowing down probable errors to as low as 1%.</p>
+                                <button class="try">Try it out</button>
+                            </li>
+                            <!-- <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Defined Plans</p>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-subitem">
+                    <p class="grid-subitem-title"><button type="button" class="collapse">+</button>
+                        Execute Reliably</p>
+                    <div class="grid-subitem-body">
+                        <ul class="grid-subitem-list">
+                            <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Estimated Prediction</p>
+                                <p class="grid-subitem-listitem-text">Get estimated projections for sales, inventory or return on investments.</p>
+                                <button class="try">Try it out</button>
+                            </li>
+                            <!-- <li class="grid-subitem-listitem">
+                                <p class="grid-subitem-listitem-title">Simple Steps</p>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>  
+</section>
+
+<section class="value value-venn"> 
+
+    <div class="value-content venn">       
+        <div class="hex-interact">
+            <button type="button" value="Try me">Data</button>
+            <button type="button" value="Try me">Finance</button>
+            <button type="button" value="Try me">Economics</button>
+        </div>
+        <object id="hex" data="/api/static/assets/images/homepage/svg_hex_all.svg" ></object>
+    </div>
+
+    <div class="value-content venn-tagcloud">       
+        <span class="Sphere"></span>
+
+        <!-- Including the TagCloud.js script CDN in the document    -->
+        <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+        <script>
+            const Texts = [
+                'DATA', 'LEARNING', 'MACHINE',
+                'SQL', 'HTML', 'CSS',
+                'PYTHON', 'JAVASCRIPT',
+                'STATA', 'RSTUDIO', 'MONGODB',
+                'EXPRESS', 'T-SQL', 'JQUERY', 'SPSS'
+            ];
+    
+            var tagCloud = TagCloud('.Sphere', Texts, {
+    
+                // Sphere radius in px
+                radius: 180,
+    
+                // animation speed
+                // slow, normal, fast
+                maxSpeed: 'normal',
+                initSpeed: 'fast',
+    
+                // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
+                direction: 135,
+    
+                // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+                keep: true
+    
+            });
+    
+            // Giving color to each text in sphere
+            var color = '#ff0000';
+            document.querySelector('.Sphere').style.color = color;
+        </script>
+    </div>
+
+</section>
+
+<section class="value aboutme">
+    <div class="value-container">
+        
+        <div class="value-title">
+            <h2 class="value-title-heading">TL;DR</h2>
+            <p class="aboutme-title-text">
+                My Passion is Data Science. <br>
+                My Profession is Financial Analysis. <br>
+                Personally, I am an Economist. <br>
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="journey">
+    <div class="container-timeline">       
+    <div class="timeline">
+        
+        <div class="line"></div>
+
+        <div class="section-line">
+            <div class="bead"></div>
+            <div class="content-bead">
+                <h2 class="bead-title">2024</h2>
+                <h3 class="bead-subtitle">Director- IT & Finance</h3>
+                <p class="bead-text">Leading operations for a startup's development.</p>
+            </div>
+        </div>
+
+        <div class="section-line">
+            <div class="bead"></div>
+            <div class="content-bead">
+                <h2 class="bead-title">2023</h2>
+                <h3 class="bead-subtitle">Manager- Sales, Finance</h3>
+                <p class="bead-text">Managed Sales Operations for ServiceNow's Specialist Solution Consultants' group. Created automated E2E PowerBI dashboards for Global Operations & Monetization.</p>
+            </div>
+        </div>
+
+        <div class="section-line">
+            <div class="bead"></div>
+            <div class="content-bead">
+                <h2 class="bead-title">2022</h2>
+                <h3 class="bead-subtitle">Full Stack Web Development</h3>
+                <p class="bead-text">I combine all the components that goes behind a website. These would be the front end, back end, APIs, hosting, deployment, and CI/CD for seamless website updates.</p>
+            </div>
+        </div>
+        <div class="section-line">
+            <div class="bead"></div>
+            <div class="content-bead">
+                <h2 class="bead-title">2022</h2>
+                <h3 class="bead-subtitle">Automated Machine-Learning</h3>
+                <p class="bead-text">I developed the Industry Leading Machine Learning model for text-based sensor tagging, first of its kind.</p>
+            </div>
+        </div>
+        <div class="section-line">
+            <div class="bead"></div>
+            <div class="content-bead">
+                <h2 class="bead-title">2021</h2>
+                <h3 class="bead-subtitle">Enterprise DataBases</h3>
+                <p class="bead-text">Exposure with Scappers, APIs, Servers, CRUD & BigData</p>
+            </div>
+        </div>
+        <div class="section-line">
+            <div class="bead"></div>
+            <div class="content-bead">
+                <h2 class="bead-title">2021</h2>
+                <h3 class="bead-subtitle">Faculty, San Diego State University</h3>
+                <p class="bead-text">Lecturer for Applied Economics</p>
+            </div>
+        </div>
+        <div class="section-line">
+            <div class="bead"></div>
+            <div class="content-bead">
+                <h2 class="bead-title">2020</h2>
+                <h3 class="bead-subtitle">Academia, SDSU</h3>
+                <p class="bead-text">Co-Author for Research on Businesses & Local Crimes in SF & PA</p>
+            </div>
+        </div>
+        <div class="section-line">
+            <div class="bead"></div>
+            <div class="content-bead">
+                <h2 class="bead-title">2020</h2>
+                <h3 class="bead-subtitle">Research & Design</h3>
+                <p class="bead-text">Held 9 research positions for RA, GA, and TA contracts in Economics, Business & Finance at SDSU</p>
+            </div>
+        </div>
+        <div class="section-line">
+            <div class="bead"></div>
+            <div class="content-bead">
+                <h2 class="bead-title">2020</h2>
+                <h3 class="bead-subtitle">Investment Analysis</h3>
+                <p class="bead-text">Winners for CFA Investment Research Challenge, SDSU in San Diego</p>
+            </div>
+        </div>
+        <div class="section-line">
+            <div class="bead"></div>
+            <div class="content-bead">
+                <h2 class="bead-title">2020</h2>
+                <h3 class="bead-subtitle">Econometrics</h3>
+                <p class="bead-text">Masters Capstone project with Event Analysis using Advanced Regressions</p>
+            </div>
+        </div>
+        <div class="section-line">
+            <div class="bead"></div>
+            <div class="content-bead">
+                <h2 class="bead-title">2019</h2>
+                <h3 class="bead-subtitle">Statistics</h3>
+                <p class="bead-text">Econometric theory during Masters serving as the foundation for ML</p>
+            </div>
+        </div>
+        <div class="section-line">
+            <div class="bead"></div>
+            <div class="content-bead">
+                <h2 class="bead-title">2019</h2>
+                <h3 class="bead-subtitle">Finance</h3>
+                <p class="bead-text">Cleared CFA Level-1 Examination</p>
+            </div>
+        </div>
+        <div class="section-line">
+            <div class="bead"></div>
+            <div class="content-bead">
+                <h2 class="bead-title">2019</h2>
+                <h3 class="bead-subtitle">Business Analytics</h3>
+                <p class="bead-text">Post Graduate courses in Business Processes & Data Analytics</p>
+            </div>
+        </div>
+        <div class="section-line">
+            <div class="bead"></div>
+            <div class="content-bead">
+                <h2 class="bead-title">2018</h2>
+                <h3 class="bead-subtitle">Economics, B.Sc.</h3>
+                <p class="bead-text">Graduated with specialization in Operations & Research</p>
+            </div>
+        </div>
+        <div class="section-line">
+            <div class="bead"></div>
+            <div class="content-bead">
+                <h2 class="bead-title">2017</h2>
+                <h3 class="bead-subtitle">Data Scientist's Toolbox</h3>
+                <p class="bead-text">Certification for Data Science from John Hopkins University</p>
+            </div>
+        </div>
+
+    </div>
+    </div>  
+</section>
+
+
+</div> 
+
+
+
+<!-- Timeline js -->
+<script src="/api/static/jscripts/timeline.js"></script>
+<!-- MissionCollapse js -->
+<script>
+    var coll = document.getElementsByClassName("collapse");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.parentNode.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+          this.innerHTML = "+";
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          this.innerHTML = "-";
+        }
+      });
+    }
+</script>
+<!-- Alert message prompt -->
+<script>
+    var tryme = document.getElementsByClassName("try");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+        tryme[i].addEventListener("click", function() {
+        alert("Automation coming soon.. One Man Army on duty!")
+      });
+    }
+</script>
+
+<!-- ps-intro titles -->
+<script>
+    window.addEventListener('DOMContentLoaded', pssetup);
+    function pssetup() {
+        const options = {
+            rootMargin: '0px 0px -200px 0px'
+        }
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry =>{
+                if(entry.isIntersecting){
+                    entry.target.classList.add('ps-show');
+                    observer.unobserve(entry.target);
+                } else {
+                    return;
+                }
+            })
+        }, options);
+        
+        const psTitles = document.querySelectorAll('.value-title-subheading-ps');
+        psTitles.forEach(ps => observer.observe(ps));        
+    }
+</script>
+
+<!-- Particles -->
+<!-- <script src="/docs/particles.js-master/particles.min.js"></script> -->
+<script src="/api/static/jscripts/particles.js"></script>
+<script src="/api/static/jscripts/particlesJScustom.js"></script>
+
+</body>
+</html>

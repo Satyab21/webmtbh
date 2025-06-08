@@ -1,0 +1,19 @@
+.projects-temp{
+    margin: 10rem;
+    margin-bottom: 0;
+}
+
+.container-projects{
+    margin: 2rem 2rem;
+}
+
+.project .title .heading{
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.project .title .subheading{
+    font-size: 3vw;
+}
+
+

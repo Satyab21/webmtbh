@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 48 48" role="img" aria-labelledby="languagePickerChevron languagePickerChevronDesc" xmlns="http://www.w3.org/2000/svg" style="fill: #FFF; height: 8px; width: 8px;">
+    <title id="languagePickerChevron">
+      Chevron Down
+    </title>
+    <g transform="translate(-435.000000, -1746.000000)" role="presentation">
+        <polygon points="443 1766.414 444.414 1765 459 1778.172 473.586 1765 475 1766.414 459 1781" />
+    </g>
+</svg>

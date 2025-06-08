@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- General -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/api/static/assets/images/logo/data-science.svg">
+    <title>Comrades</title>
+    <link rel="stylesheet" href="/api/static/cstylesheets/include/theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>$(function(){$('#nav_header').load('/api/templates/include/nav_header.html')})</script>
+    
+    <!-- Specific -->
+    <!-- <link rel="stylesheet" href="/api/static/cstylesheets/interests.css"> -->
+    <link href="{{ url_for('static', path='/cstylesheets/interests.css') }}" rel="stylesheet">
+</head>
+
+
+<body>
+
+<!-- Header -->
+<div id="nav_header">
+    {{render_partial('include/nav_header.html')}}
+</div>
+
+
+
+<div class="container-body">
+
+<div class="container-main">
+<div class="container-values">
+
+<section class="value mission">
+<div class="value-container">
+    
+    <div class="value-title">
+        <h2 class="value-title-heading">The Mission</h2>
+        <h3 class="value-title-subheading">You get more value for your:</h3>
+    </div> 
+
+    <div class="value-content mission-grid">
+
+        <div class="grid-item mission-item">
+            <p class="grid-item-title mission-item-title"> <span class="underline">Time</span> </p>
+
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">Complete Tasks Quickly</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Pre-Processed Data</p>
+                            <p class="grid-subitem-listitem-text">Calculate as you go with ready made data meant for direct use.</p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">The Shortest Path</p>
+                            <p class="grid-subitem-listitem-text">Use PERM and CPM to find the most optimized sequencing of tasks.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">Deliver with Speed</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Faster Lead Time</p>
+                            <p class="grid-subitem-listitem-text">Improve Operations Cycle and reduce time between order placement & Delivery.</p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Quick Turnover Time</p>
+                            <p class="grid-subitem-listitem-text">Improve Production Cycle and deliver with speed with Inventory Management.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item mission-item">
+            <p class="grid-item-title mission-item-title"> <span class="underline">Effort</span> </p>
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">Eliminate Pain Points</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Never struggle to find data</p>
+                            <p class="grid-subitem-listitem-text">Integrate corporate platforms with systems for a better flow of data.</p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Concise Documentation</p>
+                            <p class="grid-subitem-listitem-text">A simple guide detailed with examples and step-wise  screenshots is the best solution.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">Damage Control</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Real-time Tracking</p>
+                            <p class="grid-subitem-listitem-text">Live data delivery helps foresee upcoming adversities and provides room for better mitigation.</p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Your Data Cockpit</p>
+                            <p class="grid-subitem-listitem-text">Manage effectively with a Dashboard Ecosystem and douse your fires before they start.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item mission-item">
+            <p class="grid-item-title mission-item-title"> <span class="underline">Money</span> </p>
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">Mutliply your Profits</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Identify Factors</p>
+                            <p class="grid-subitem-listitem-text">Discover what effects your Profits & what causes expenses. </p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Audience Targeting</p>
+                            <p class="grid-subitem-listitem-text">Increase your Revenue by matching customer types with your product lines.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">Leverage & Lead</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Industry Leading Solutions</p>
+                            <p class="grid-subitem-listitem-text">Raise your Revenue above the industry average by leveraging unique tools made just for you.</p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Above the Curve</p>
+                            <p class="grid-subitem-listitem-text">Lead the market by combining tools from Data Science, Finance & Economics.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+
+</div>  
+</section>
+.
+
+<!-- <h3 class="value-title-subheading">I love Communicating Data, Coordinating with Teams and Delivering Answers.</h3> <br>
+
+<h3 class="value-title-subheading">Its not just about me. I assist & serve everyone who wants to make an impact.</h3> -->
+
+  
+
+<section class="value passion">
+    <div class="value-container">
+
+        <div class="value-title">
+            <h2 class="value-title-heading">My Passion</h2>
+            <h3 class="value-title-subheading">I love Communicating Data, Coordinating with Teams and Delivering Answers.</h3>
+            <h3 class="value-title-subheading">Its not just about me. I assist & serve everyone who wants to make an impact.</h3>
+        </div>  
+
+        <div class="value-content passion-grid">
+
+        <div class="grid-item passion-item">
+            <p class="grid-item-title passion-item-title"> <span class="underline">Productivity</span> </p>
+
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">No point of repeating work</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">From Repetition to Automation</p>
+                            <p class="grid-subitem-listitem-text">Get more work done in less time without sacrificing quality.</p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Divide & Conquer</p>
+                            <p class="grid-subitem-listitem-text">Best use your specialized team with efficient use of scarce resources.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">Deliver with Quality</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Predict with Accuracy</p>
+                            <p class="grid-subitem-listitem-text">Use raw data to predict answers within seconds with upto 99% accuracy.</p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Errorless Delivery</p>
+                            <p class="grid-subitem-listitem-text">Do it once. Do it right.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item passion-item">
+            <p class="grid-item-title passion-item-title"> <span class="underline">Convenience</span> </p>
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">Data Whenever you want</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Data on Schedule</p>
+                            <p class="grid-subitem-listitem-text">Have your Data picked-up & dropped-off from the DBase with CRUD capabilities.</p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Easy Data Access</p>
+                            <p class="grid-subitem-listitem-text">A 2-min data load-time is better than rummaging through a mass of excel files for 2 hours.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">Data However you want</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Your choice of data format</p>
+                            <p class="grid-subitem-listitem-text">What suits you matters most: pick from CSVs, PDFs & everything in between.</p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Visualize your way</p>
+                            <p class="grid-subitem-listitem-text">Animated charts using R-studio or Data-interaction using PowerBI, I got you covered.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item passion-item">
+            <p class="grid-item-title passion-item-title"> <span class="underline">Simplicity</span> </p>
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">Confidence without Stress</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Clear Goals</p>
+                            <p class="grid-subitem-listitem-text">Align goals with long-term plans.</p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Defined Plans</p>
+                            <p class="grid-subitem-listitem-text">Map out a process flow-chart considering any &/ all possible deviations. No room for doubt!</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-subitem">
+                <p class="grid-subitem-title">Execute Reliably</p>
+                <div class="grid-subitem-body">
+                    <ul class="grid-subitem-list">
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Easy Process</p>
+                            <p class="grid-subitem-listitem-text">No matter how big, break down a complex process to its smallest simple task. Still big? Break it down even more.</p>
+                        </li>
+                        <li class="grid-subitem-listitem">
+                            <p class="grid-subitem-listitem-title">Simple Steps</p>
+                            <p class="grid-subitem-listitem-text">Assign steps to people based on their specializations, interests, duties & responsibilities.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>  
+    </div>  
+</section>
+
+<section class="value benefits">
+    <div class="value-container">
+        <div class="value-title">
+            <h2 class="value-title-heading">What aspect of data intrigues me the most?</h2>
+            <h3 class="value-title-subheading"></h3>
+        </div>  
+        <div class="value-content">
+        <ul> 
+            <li>
+                <p class="value-desc">
+                    <span class="value-text">Instantly complete your Excel-Calculations with Drag & Drop solution (using Python & APIs).</span>
+                </p>
+            </li>
+            <li>
+                <p class="value-desc">
+                    <span class="value-text">Your daily Word-Formatting now just a click away (using VBA & Macros).</span>
+                </p>
+            </li>
+            <li>
+                <p class="value-desc">
+                    <span class="value-text">Convert raw data into answers within seconds (using Machine Learning).</span>
+                </p>
+            </li>
+        </ul>
+        </div>  
+    </div>  
+</section>
+
+<section class="value interests">
+    <div class="value-container">
+        <div class="value-title">
+            <h2 class="value-title-heading">What are my areas of interest with respect to data analytics?</h2>    
+        </div>  
+        <div class="value-content">
+            <ul> 
+                <li>
+                    <p class="value-desc">
+                        Machine Learning with textual data
+                    </p>
+                </li>
+                <li>
+                    <p class="value-desc">
+                        Process Automation with Data Pipelining
+                    </p>
+                </li>
+                <li>
+                    <p class="value-desc">
+                        Econometric Analysis with Advanced Regressions
+                    </p>
+                </li>
+                <li>
+                    <p class="value-desc">
+                        Financial Plannning with Corporate Finance
+                    </p>
+                </li>
+            </ul>
+        </div>  
+    </div>  
+</section>
+
+<section class="value importance">
+    <div class="value-container">
+        <div class="value-title">
+            <h2 class="value-title-heading">Why its important?</h2>
+            <h3 class="value-title-subheading">Harness critical information inside data science to deliver value to a business.</h3>
+            <h3 class="value-title-subheading">I transform Plans, Design Strategy and Translate Process.</h3>
+        </div>  
+        <div class="value-content">
+            <h4 class="value-content-title"><p class="process-execution">Process Execution</p></h4>
+            <p class="value-desc">
+                <span class="value-text">1. Problem statements (critical thinking)</span>
+            </p>
+            <p class="value-desc">
+                <span class="value-text">2. weighing options (optimization operations & research)</span>
+            </p>  
+            <p class="value-desc">
+                <span class="value-text">3. recommendations (communication)</span>
+            </p>
+            <p class="value-desc">
+                <span class="value-text">4. Take action (decision making)</span>
+            </p>
+            <p class="value-desc">
+                <span class="value-text">5. evaluate decision impact (regressions)</span>
+            </p>
+            <p class="value-desc">
+                <span class="value-text">Delivering the right data...</span>
+            </p>
+            <p class="value-desc">
+                <span class="value-text">To the correct person..</span>
+            </p>
+            <p class="value-desc">
+                <span class="value-text">Before its needed.</span>
+            </p>
+            <p class="value-desc">
+                <span class="value-text">Data analysis life cycle: The process of going from data to decision.</span><br>
+                Data scientists create new questions using data, while analysts find answers to existing questions by creating insights from data sources.
+            </p>
+            <p class="value-desc">
+                The 5 whys to identify the Root-Cause, (ex. Lets increase our sales.) <br> <br>
+                Why Cant we increase our sales? Because we cant open newer stores.<br>
+                Why cant we open new stores? Because we are not allowed to. <br>
+                Why are we not allowed to open new stores? Because regulations dont allow us. <br>
+                Why regulations dont allow us to open new stores? Because we dont have the permit. <br>
+                Why dont we have the permit? Because we dont know how to file. <br><br>
+                Thats it? The solution is simple:<br>
+                Research the filing, submit the permit, follow regulations, open new stores, and Bam! You sell more, earn more.  
+            </p>
+                <p class="value-desc">
+                A picture is worth a thousand words. But.. <br>
+                A chart is worth a million points. 
+            </p>
+            <p class="value-desc">
+                Mindless tasks out of habits, such as routine formatting, are best suited to be automated.<br>
+                Enagage your brainpower & focus the team's attention on tasks requring unique skill sets. 
+            </p>
+
+        </div>  
+    </div>  
+</section>
+
+</div>
+</div>
+</div>
+
+</body>
+
+</html>

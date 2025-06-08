@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- General -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/api/static/assets/images/logo/data-science.svg">
+    <title>Comrades</title>
+    <link rel="stylesheet" href="/api/static/cstylesheets/include/theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>$(function(){$('#nav_header').load('/api/templates/include/nav_header.html')})</script>
+    <!-- Specific -->
+    <link rel="stylesheet" href="/api/static/cstylesheets/login.css">
+    <link href="{{ url_for('static', path='/cstylesheets/login.css')}}" rel="stylesheet">
+</head>
+
+
+<body>
+
+<!-- Header -->
+<div id="nav_header">
+    {{render_partial('include/nav_header.html')}}
+</div>
+
+<!-- Main -->
+<div class="container main">
+
+  <!-- Login -->
+  <div class="container login ">
+    
+  
+    <!-- Form -->
+    <div class="container details">
+      <form method="post" class="form" action="/login">
+
+        <!-- <div class="imgcontainer">
+          <img src="/api/static/assets/images/logo/yeh-bik-gayi-hai-gormint.jpg" alt="login-img">
+        </div> -->
+
+        <div class="login details">
+          <div class="user input email">
+            <!-- <label for="username">Enter username / Email</label> -->
+            <input type="text" name="username" placeholder="Email">
+          </div>
+
+          <div class="user input pw">
+            <!-- <label for="pw">Enter Password</label> -->
+            <input type="password" name="password" placeholder="Password">
+          </div>
+
+          <div class="user options submit">
+            <button type="submit">Log-In</button>
+          </div>
+
+          <div class="user options forgotpw">
+            <button>Forgot Password</button>
+          </div>
+
+          <div class="user options signup">
+            <button type="submit">Sign-Up New Users</button>
+          </div>
+
+
+
+          <!-- <div class="user options remember-me">
+            <label>Remember me</label>
+            <input type="checkbox" checked="checked" name="remember">
+          </div> -->
+        </div>
+
+        <div class="login support">
+          <!-- <div class="user cancel">
+            <button type="button" class="cancel-button">
+              Cancel
+            </button>
+          </div>
+
+          <div class="user reset">
+            <button type="reset" class="reset-button">
+              Reset
+            </button>
+          </div> -->
+
+          <!-- <div class="user forgotpw">
+            <button>Forgot Password</button>
+          </div> -->
+        </div>
+
+        
+
+      </form>
+    </div>
+
+  </div>
+
+
+
+
+</div>
+</body>
+
+</html>

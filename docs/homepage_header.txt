@@ -1,0 +1,50 @@
+<!-- Header -->
+<header>
+    <div class="nav-container"> 
+        <nav class="nav">          
+            <!--Nav: Mobile -->
+            <ul class="nav-list nav-list-mobile">
+                <li class="nav-item">
+                    <div class="mobile-menu">
+                        <span class="menu-line menu-line-top"></span><br>
+                        <span class="menu-line menu-line-bottom"></span>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="/api/templates/homepage.html" class="nav-link nav-link-logo"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:satyab21@yahoo.in?subject=We are interested to learn more" class="nav-link nav-link-contact">
+                        <span class="span-mobile-contact">Contact</span></a>
+                </li>
+            </ul>
+            
+            <!-- Nav: Web-fields -->
+            <ul class="nav-list nav-list-larger">
+                <li class="nav-item nav-items-hidden">
+                    <a href="/api/templates/homepage.html" class="nav-link nav-link-logo"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/api/templates/knowledge.html" class="nav-link">Knowledge</a>
+                    <!-- /api/templates/aboutme.html -->
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item" >
+                    <a href="#" class="nav-link">Journey</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Interests</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/api/static/assets/resume/SatyaBhambhani_SrLeadMLEngineer_Resume.pdf" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item nav-items-hidden">
+                    <a href="mailto:satyab21@yahoo.in" class="nav-link nav-link-contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- Header -->

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- General -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/api/static/assets/images/logo/data-science.svg">
+    <title>Comrades</title>
+    <link rel="stylesheet" href="/api/static/cstylesheets/include/theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>$(function(){$('#nav_header').load('/api/templates/include/nav_header.html')})</script>
+    <!-- Specific -->
+    <link rel="stylesheet" href="/api/static/cstylesheets/projects.css">
+    <!-- <link href="{{ url_for('static', path='/cstylesheets/projects.css')}}" rel="stylesheet"> -->
+</head>
+
+
+<body>
+
+<!-- Header -->
+<div id="nav_header">
+    {{render_partial('include/nav_header.html')}}
+</div>
+
+<div class="projects-temp">
+    <h1>Projects</h1>
+    <p>*Coming soon</p>
+    <p>Contact me if needed earlier.</p>
+</div>
+
+
+<div class="container-projects">
+
+    <section class="project">
+        <div class="title">
+            <div class="heading">
+                Heading
+            </div>
+            <div class="subheading">
+                subheading
+            </div>
+        </div>
+        <div class="meta">
+            <div class="field">
+                <p>Economics</p> 
+            </div>
+            <div class="timeline">
+                <p>Hover to view timeline</p>
+            </div>
+            <div class="tags">
+                <ul class="tags-list">
+                    <li class="tags-item">
+                        python
+                    </li>
+                    <li class="tags-item">
+                        stata
+                    </li>
+                    <li class="tags-item">
+                        R-studio
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="summary">
+            <div class="heading">
+                Summary Heading
+            </div>
+            <div class="content">
+                summary content
+            </div>
+        </div>
+        <div class="results">
+            Project results
+        </div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ullam harum eveniet odio fugiat officia explicabo? Saepe eligendi consequatur aspernatur sed ut, corporis nesciunt nihil unde repudiandae, dignissimos dolor corrupti!</p>
+        </div>
+        
+
+    </section>
+</div>
+
+
+</body>
+
+</html>

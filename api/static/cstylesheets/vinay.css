@@ -1,0 +1,52 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+
+.nav{
+  border: 1px solid red;
+  margin: 1em;
+  width: 25vw;
+  text-align: center;
+}
+li{
+  text-align: left;
+}
+
+
+h4{
+  margin: 0;
+}
+
+
+.listing{
+  border: 1px solid red;
+  width: 75vw;
+  margin: 1em;
+  text-align: center;
+  /* background-image: url("/docs/pic_title.png"); */
+}
+
+
+
+.filter{
+  display: flex;
+  flex-direction: row;
+  border: 1px dashed blue;
+}
+.button{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+button{
+  height: 2em;
+  width: 5em;
+  bottom: 0px;
+}
+input{
+  width: 75%;
+}
+

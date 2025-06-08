@@ -1,0 +1,236 @@
+
+/* Venn  */
+.venn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+svg{
+    margin-top: 3rem;
+    overflow: visible;
+    height: 45%;
+    width: 45%;
+}
+
+svg text{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+path{
+    fill: transparent;
+    stroke: black;
+    stroke-width: 0.5;
+  }
+  path:hover {
+    fill: blue;
+}
+
+.t0{
+    fill:  #FFFF00;
+    }
+    .t0:hover{
+        fill:  #FFFF00;
+}
+
+.t1{
+    fill: orange;
+    }
+    .t1:hover{
+        fill: #ff8204;
+}
+.t1i{
+    fill: yellow;
+    }
+    .t1i:hover{
+        fill: #ff8204;
+}
+
+.t2{
+    fill: coral;
+    }
+    .t2:hover{
+        fill: pink;
+}
+.t2i{
+    fill: yellow;
+    }
+    .t2i:hover{
+        fill: pink;
+}
+
+.t3{
+    fill: #FF0000;
+    }
+    .t3:hover{
+        fill: #ff0202;
+}
+.t3i{
+    fill: yellow;
+    }
+    .t3i:hover{
+        fill: #b12300;
+}
+
+.t4{
+    fill: #ffda51;
+    }
+    .t4:hover{
+        fill: pink;
+}
+.t4i{
+    fill: yellow;
+    }
+    .t4i:hover{
+        fill: pink;
+}
+
+.t5{
+    fill: #00FF00;
+    }
+    .t5:hover{
+        fill: #5a9c14;
+}
+.t5i{
+    fill: yellow;
+    }
+    .t5i:hover{
+        fill: #5a9c14;
+}
+
+.t6{
+    fill: #92D050;
+    }
+    .t6:hover{
+        fill: pink;
+}
+.t6i{
+    fill: yellow;
+    }
+    .t6i:hover{
+        fill: pink;
+}
+
+.t7{
+    fill: #FF00FF;
+    }
+    .t7:hover{
+        fill: #ff206a;
+}
+.t7i{
+    fill: yellow;
+    }
+    .t7i:hover{
+        fill: #ff206a;
+}
+
+.t8{
+    fill: #ff52ff;
+    }
+    .t8:hover{
+        fill: pink;
+}
+.t8i{
+    fill: yellow;
+    }
+    .t8i:hover{
+        fill: pink;
+}
+
+.t9{
+    fill: #0000FF;
+    }
+    .t9:hover{
+        fill: #732dff;
+}
+.t9i{
+    fill: yellow;
+    }
+    .t9i:hover{
+        fill: #732dff;
+}
+
+.t10{
+    fill: #3333CC;
+    }
+    .t10:hover{
+        fill: pink;
+}
+.t10i{
+    fill: yellow;
+    }
+    .t10i:hover{
+        fill: pink;
+}
+
+.t11{
+    fill: #00FFFF;
+    }
+    .t11:hover{
+        fill: #008fbe;
+}
+.t11i{
+    fill: yellow;
+    }
+    .t11i:hover{
+        fill: #008fbe;
+}
+
+.t12{
+    fill: #33ccff;
+    }
+    .t12:hover{
+        fill: pink;
+}
+.t12i{
+    fill: yellow;
+    }
+    .t12i:hover{
+        fill: pink;
+}
+
+g{
+    opacity: 0.89;
+}
+
+
+
+
+
+
+
+@media screen and (max-width : 767px){
+.venn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    svg{
+        height: 100%;
+        width: 100%;
+    }
+
+    text[href|="#t0"]{
+        font-size: 2.5em;
+    }
+    text[href|="#t1"]{
+        transform: translate(-120px, 10px);
+    }
+    text[href|="#t3"]{
+        transform: translate(-160px, 0px);
+    }
+    text[href|="#t5"]{
+        transform: translate(-140px, -21px);
+    }
+    text[href|="#t7"]{
+        transform: translate(130px, -30px);
+    }
+    text[href|="#t9"]{
+        transform: translate(185px, 0px);
+    }
+    text[href|="#t11"]{
+        transform: translate(120px, 10px);
+    }
+}

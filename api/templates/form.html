@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Sample Form</title>
+        <link href="{{ url_for('static', path='/css/mystyle.css') }}" rel="stylesheet">
+    </head>
+
+    <body>
+        <p>Go back to  
+            <a href="/">HomePage</a>.
+        </p>
+        <img src="{{ url_for('static', path='/images/Field_VennDiagram.jpg') }}" alt="VennDi">
+        <h1>Venn is awesome!
+            <a href="https://www.google.com/maps">Google Maps</a>
+        </h1>
+        <form method="post">
+            <input type="number" name="num" value=""/>
+            <input type="submit">
+        </form>
+        <p>Result: {{ result }}</p>
+    </body>
+
+</html>
